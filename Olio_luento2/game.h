@@ -1,23 +1,21 @@
 #ifndef GAME_H
 #define GAME_H
-#pragma once
 
-class Game{
-    
-    private:
+#define DEBUG // kommentoi tämä pois jos haluat DEBUG tiedot piiloon (eikö ookkin aika hieno tapa löysin netistä:D)
 
+class Game
+{
+
+private:
     int max_number;
     int random_number;
     int player_guess;
     int num_of_guesses;
 
-    public:
+public:
     Game(int max_number);
     void play();
     void print_game_result();
 };
-
-
-
 
 #endif
