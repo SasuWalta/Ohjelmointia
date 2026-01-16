@@ -28,9 +28,7 @@ void Game::play()
     cout << "[DEBUG] play()-funktio aloitettu" << endl;
 #endif
 
-    player_guess = 0;
-    num_of_guesses = 0;
-    // jos vastaus oli väärä, peli palaa kohtaan kysymään lukua
+        // jos vastaus oli väärä, peli palaa kohtaan kysymään lukua
     while (player_guess != random_number)
     {
         // kysytään pelaajan arvaus
