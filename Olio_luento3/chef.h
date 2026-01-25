@@ -1,5 +1,6 @@
 #ifndef CHEF_H
 #define CHEF_H
+// #define DEBUG
 #include <iostream>
 using namespace std;
 
