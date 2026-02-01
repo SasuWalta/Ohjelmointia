@@ -1,4 +1,4 @@
-#ifndef LUOTTOTLI_H
+#ifndef LUOTTOTILI_H
 #define LUOTTOTILI_H
 #include "pankkitili.h"
 
@@ -14,4 +14,4 @@ protected:
     double luottoRaja = 0;
 };
 
-#endif /// lkj
+#endif
