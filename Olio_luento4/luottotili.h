@@ -14,4 +14,4 @@ protected:
     double luottoRaja = 0;
 };
 
-#endif
+#endif /// lkj
