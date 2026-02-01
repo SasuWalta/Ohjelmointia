@@ -15,7 +15,7 @@ public:
 
 protected:
     string omistaja;
-    double saldo = 0; // real
+    double saldo = 0; // real shit
 };
 
 #endif
