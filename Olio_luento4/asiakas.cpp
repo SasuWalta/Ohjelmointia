@@ -23,14 +23,12 @@ void Asiakas::showSaldo()
     cout << "Luottotilin saldo " << luottotili.getBalance() << endl;
 }
 
-bool Asiakas::tiliSiirto(double sum, Asiakas &kohde)
+// bool Asiakas::tiliSiirto(double sum, Asiakas &kohde)
+bool Asiakas::tiliSiirto(double sum, Asiakas *kohde)
 {
-    if (kayttotili.withdraw(sum))
-    {
-        kohde.kayttotili.deposit(sum);
-        return true;
-    }
-    return false;
+    nosto(sum);
+    kohde->talletus(sum);
+    return true;
 }
 
 string Asiakas::getNimi()
@@ -40,20 +38,24 @@ string Asiakas::getNimi()
 
 bool Asiakas::talletus(double sum)
 {
-    return kayttotili.deposit(sum);
+    kayttotili.deposit(sum);
+    return true;
 }
 
-bool Asiakas::luotonNosto(double sum)
+bool Asiakas::nosto(double sum)
 {
-    return kayttotili.withdraw(sum);
+    kayttotili.withdraw(sum);
+    return true;
 }
 
 bool Asiakas::luotonMaksu(double sum)
 {
-    return luottotili.deposit(sum);
+    luottotili.deposit(sum);
+    return true;
 }
 
 bool Asiakas::luotonNosto(double sum)
 {
-    return luottotili.withdraw(sum);
+    luottotili.withdraw(sum);
+    return true;
 }

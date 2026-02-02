@@ -19,9 +19,9 @@ bool Luottotili::deposit(double sum)
 {
 #ifdef DEBUG
     cout << "Olen luottotili velanmaksu" << endl;
-    cout << "Saldo ennen: " << saldo << endl;
-    cout << "Saldo jälkeen: " << saldo + sum << endl;
 #endif
+    cout << "Saldo ennen: " << saldo << endl;
+    cout << "Saldo jalkeen: " << saldo + sum << endl;
 
     if ((sum < 0) || ((sum + saldo) > 0))
         return false;
@@ -34,10 +34,10 @@ bool Luottotili::withdraw(double sum)
 {
 #ifdef DEBUG
     cout << "Olen luottotili velannosto" << endl;
+#endif
     cout << "Luottoraja: " << luottoRaja << endl;
     cout << "Saldo ennen: " << saldo << endl;
-    cout << "Saldo jälkeen: " << saldo - sum << endl;
-#endif
+    cout << "Saldo jalkeen: " << saldo - sum << endl;
 
     if ((sum < 0) || (std::abs(saldo) > luottoRaja))
         return false;

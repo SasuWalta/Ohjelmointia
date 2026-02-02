@@ -1,5 +1,4 @@
-#ifndef ASIAKAS_H
-#define ASIAKAS_H
+#pragma once
 #include <iostream>
 #include "luottotili.h"
 #include "pankkitili.h"
@@ -13,14 +12,14 @@ public:
     string getNimi();
     void showSaldo();
     bool talletus(double);
+    bool nosto(double);
     bool luotonMaksu(double);
     bool luotonNosto(double);
-    bool tiliSiirto(double, Asiakas &);
+    //    bool tiliSiirto(double, Asiakas &);
+    bool tiliSiirto(double sum, Asiakas *kohde);
 
 private:
     string nimi;
     Pankkitili kayttotili;
     Luottotili luottotili;
 };
-
-#endif

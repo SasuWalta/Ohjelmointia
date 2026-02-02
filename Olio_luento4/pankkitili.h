@@ -1,8 +1,7 @@
-#ifndef PANKKITILI_H
-#define PANKKITILI_H
+#pragma once
 #include <iostream>
 using namespace std;
-#include "main.cpp"
+// #define DEBUG
 
 class Pankkitili
 {
@@ -17,5 +16,3 @@ protected:
     string omistaja;
     double saldo = 0; // real
 };
-
-#endif
