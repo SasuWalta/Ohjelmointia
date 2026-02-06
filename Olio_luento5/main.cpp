@@ -15,11 +15,11 @@ int main()
     n.lisaa(&c);
     n.tulosta();
 
-    n.postita("Tama on viesit 1");
+    n.postita("Viesti 1");
 
     n.poista(&b);
 
-    n.postita("Tama on viesti 2");
+    n.postita("Viesti 2");
 
     return 0;
 }
