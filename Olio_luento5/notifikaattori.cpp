@@ -40,10 +40,10 @@ void Notifikaattori::poista(Seuraaja *o)
     {
         temp2 = nullptr;
     }
-    else
-    {
-        cout << "Ei ole olemassa poistettavaa!" << o->getNimi() << endl;
-    }
+    /* else
+     {
+         cout << "Ei ole olemassa poistettavaa!" << o->getNimi() << endl;
+     } */
 }
 
 void Notifikaattori::tulosta()
