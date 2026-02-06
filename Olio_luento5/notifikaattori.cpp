@@ -16,6 +16,11 @@ void Notifikaattori::lisaa(Seuraaja *o)
 void Notifikaattori::poista(Seuraaja *o)
 {
     cout << "Notifikaattori on poistanut kayttajan: " << o->getNimi() << endl;
+    if (seuraajat == o)
+    {
+        seuraajat = o->next;
+        return;
+    }
     Seuraaja *temp1 = seuraajat;
     Seuraaja *temp2 = nullptr;
     while (temp1 != nullptr)
@@ -30,6 +35,14 @@ void Notifikaattori::poista(Seuraaja *o)
             temp2 = temp1;
             temp1 = temp1->next;
         }
+    }
+    if (temp1 = o)
+    {
+        temp2 = nullptr;
+    }
+    else
+    {
+        cout << "Ei ole olemassa poistettavaa!" << o->getNimi() << endl;
     }
 }
 
